@@ -6,13 +6,13 @@ class Usuario{
         this.mascotas = mascotas
     }
 
-    getFullName() {return(`${this.nombre} ${this.apellido}`)};
+    getFullName() {return(`Que onda rey, yo soy ${this.nombre} ${this.apellido}`)};
     getBookName() {return(this.libros)};
     countMascotas() {return(this.mascotas.length)}
 }
 
-let usuario1 = new Usuario ('Benito', 'Camelas', [{nombre: 'Como cambiar su nombre', autor: 'Debora Meltrozo'}])
+let usuario1 = new Usuario ('Benito', 'Camelas', [{nombre: 'Como cambiar su nombre', autor: 'Debora Meltrozo'}, {nombre:'Vivi tu vida, el nombre es lo de menos', autor:'Armando Paredes'}], ['gato', 'perro', 'jirafa', 'stampy'])
 
 console.log(usuario1.getFullName());
-console.log(usuario1.getBookName.name());
-//console.log(usuario1.countMascotas());
+console.log(usuario1.getBookName());
+console.log(usuario1.countMascotas());
